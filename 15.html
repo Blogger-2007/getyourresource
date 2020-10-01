@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item active" aria-current="page">Viewing code</li>
+        </ol>
+      </nav>
+      <div class="card">
+        <div class="card-header">
+          C++ Programming
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Finding compound interest</h5>
+          <p class="card-text">
+            <div class="line number4 index3 alt1"><code class="preprocessor">#include&lt;iostream&gt; </code></div>
+              using namespace std;<br>
+              
+              class BankDeposit{<br>
+                  int Principal;<br>
+                  int years;<br>
+                  float interestRate;<br>
+                  float returnValue;<br>
+              
+                  public:<br>
+                      BankDeposit(){}<br>
+                      BankDeposit(int p, int y, float r);<br>
+                      BankDeposit(int p, int y, int r);<br>
+                      void show();<br>
+              };<br>
+              
+              BankDeposit:: BankDeposit(int p, int y, float r){<br>
+                  Principal = p;<br>
+                  years = y;<br>
+                  interestRate = r;<br>
+              
+                  returnValue = Principal;<br>
+                  for (int i = 0; i < y; i++)<br>
+                  {<br>
+                      returnValue = returnValue * (1+r);<br>
+                  }<br>
+                  
+              }<br>
+              BankDeposit:: BankDeposit(int p, int y, int r){<br>
+                  Principal = p;<br>
+                  years = y;<br>
+                  interestRate = float(r)/100;<br>
+              
+                  returnValue = Principal;<br>
+                  for (int i = 0; i < y; i++)<br>
+                  {<br>
+                      returnValue = returnValue * (1+interestRate);<br>
+                  }<br>
+                  
+              }<br>
+              void BankDeposit :: show(){<br>
+                  cout << endl<<"Principal amount was "<<Principal<<" ReturnValue after "<<years<<" years is "<<returnValue<<endl;<br>
+              }<br>
+              
+              int main(){<br>
+                  BankDeposit bd1, bd2, bd3;<br>
+                  int p, y;<br>
+                  float r;<br>
+                  int R;<br>
+              
+                  cout << "Enter the value of p, y and r"<<endl;<br>
+                  cin>>p>>y>>r;<br>
+                  bd1 = BankDeposit(p, y, r);<br>
+                  bd1.show();<br>
+              
+                  cout << "Enter the value of p, y and R"<<endl;<br>
+                  cin>>p>>y>>r;<br>
+                  bd2 = BankDeposit(p, y, R);<br>
+                  bd2.show();<br>
+              
+                  return 0;<br>
+              }<br>
+                
+          </p>
+          <a href="/topics.html" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">View other topics</a>
+          <a href="/index.html" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Go to home</a>
+        </div>
+      </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>

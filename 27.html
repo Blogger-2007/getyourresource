@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item active" aria-current="page">Viewing code</li>
+        </ol>
+      </nav>
+      <div class="card">
+        <div class="card-header">
+          C++ Programming
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Stone, Paper , Scissor Game!</h5>
+          <p class="card-text">
+            <div class="line number4 index3 alt1"><code class="preprocessor">#include&lt;iostream&gt; </code></div>
+            <!-- <div class="line number4 index3 alt1"><code class="preprocessor">#include&lt;cmath&gt; </code></div> -->
+            <div class="line number4 index3 alt1"><code class="preprocessor">#include&lt;cstlib&gt; </code></div>
+            <div class="line number4 index3 alt1"><code class="preprocessor">#include&lt;ilimits&gt; </code></div>
+            <div class="line number4 index3 alt1"><code class="preprocessor">#include&lt;ctime&gt; </code></div>
+              
+              using namespace std;<br>
+              
+              #define win Congratulations, you won!<br>
+              #define loose Sorry, you lost. Please try again.<br>
+              
+              int main()<br>
+              {<br>
+              
+                  int choice;<br>
+                  int i;<br>
+                  int comp;<br>
+                  char res;<br>
+                 
+                  unsigned seed;<br>
+                  
+                  cout << "Rock/Paper/scissors is a simple game. The rules are: \n Rock beats scissors. \n Scissors beats Paper. \n Paper beats rock.\n"; <br>   
+                  //The choices<br>
+                  cout << "Game Choices.\n\n";<br>
+                  cout << "1. Rock\n";<br>
+                  cout << "2. Paper\n";<br>
+                  cout << "3. Scissors\n";<br>
+                  cout << "4. Quit, exits the game.\n\n";<br>
+                  cout << "Please enter your choice.";<br>
+                  cin >> choice;<br>
+               
+                  
+                  
+                  if (choice == 1) //Rock<br>
+                      {   <br>
+                      cout << "You picked Rock.\n";<br>
+                      cout << "Now here was my choice.\n";<br>
+                      }<br>
+                  
+                   else if (choice == 2) //Paper<br>
+                      {   <br>
+                      cout << "You picked Paper.\n";<br>
+                      cout << "Now here was my choice.\n";<br>
+                      }<br>
+                  
+                 else if (choice == 3) //Scissors<br>
+                      {   <br>
+                      cout << "You picked Scissors.\n";<br>
+                      cout << "Now here was my choice.\n";<br>
+                      }<br>
+                  else if ( choice == 4)<br>
+                      {<br>
+                      return 0;<br>
+                      }<br>
+              
+                      seed = time(0);<br>
+                      srand(seed); //For the random generator.<br>
+                      
+               comp = rand() % 3 + 1; //Computers pick.<br>
+                
+                if (comp==1) //Computer rock<br>
+                      {<br>
+                      res = 1;<br>
+                      cout << "Rock!\n";<br>
+                      }<br>
+                
+                else if (comp==2) //Computer paper<br>
+                     {<br>
+                      res = 2;<br>
+                     cout << "Paper!\n";<br>
+                      }<br>
+                else if (comp==3)  // Computer scissors<br>
+                      {<br>
+                      res = 3<br>
+                      cout << "Scissors!\n";<br>
+                      }<br>
+                
+                switch (res)<br>
+                  {<br>
+                      case '1': cout << "test";<br>
+                      case '2': cout << "tests";<br>
+                      case '3': cout << "test";<br>
+                  }<br>
+              
+              
+               system("pause");<br>
+                    return 0;<br>
+              }<br>
+              
+              
+              
+          </p>
+          <a href="/topics.html" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">View other topics</a>
+          <a href="/index.html" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Go to home</a>
+        </div>
+      </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item active" aria-current="page">Viewing code</li>
+        </ol>
+      </nav>
+      <div class="card">
+        <div class="card-header">
+          C++ Programming
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Finding Volume of Cuboid,Cube and cylinder</h5>
+          <p class="card-text">
+            <div class="line number4 index3 alt1"><code class="preprocessor">#include&lt;iostream&gt; </code></div>
+            <!-- <div class="line number4 index3 alt1"><code class="preprocessor">#include&lt;cmath&gt; </code></div> -->
+            <!-- #include<iostream> -->
+              using namespace std;<br>
+              
+              int sum(float a, int b){<br>
+                  cout << "Using function with 2 arguments "<<endl;<br>
+                  return a+b;<br>
+              }<br>
+              int sum(int a, int b, int c){<br>
+                  cout << "Using function with 3 arguments "<<endl;<br>
+                  return (a+b+c);<br>
+              }<br>
+              //Calcululate the volume of cylinder;<br>
+              int volume(double r, int h){<br>
+                  return(3.14*r*r*h);<br>
+              }<br>
+              // Calculate the volume of cube<br>
+              int volume(int a){<br>
+                  return a*a*a;<br>
+              }<br>
+              //Calculate the volume of cuboid<br>
+              int volume(int l, int b, int h){<br>
+                  return (l*b*h);<br>
+              }<br>
+              int main(){<br>
+                  // cout << "The sum of 3 and 6 is "<<sum(3,6)<<endl;<br>
+                  // cout << " The sum of 3, 7, 6 is "<<sum(5, 7, 6)<<endl;<br>
+                  cout<<"The volume of cuboid of 3,7,6 "<<endl<<volume(3, 7, 6)<<endl;<br>
+                  cout<<"The volume of cylinder of radius 3 and 6 "<<endl<<volume(3,6)<<endl;<br>
+                  cout<<"The volume of cube of side 7"<<endl<<volume(7)<<endl;<br>
+                  return 0;<br>
+              }<br>
+          </p>
+          <a href="/topics.html" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">View other topics</a>
+          <a href="/index.html" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Go to home</a>
+        </div>
+      </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>
